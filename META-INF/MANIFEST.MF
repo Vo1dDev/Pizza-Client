@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+TweakOrder: 0
+MixinConfigs: mixins.pizzaclient.json
+ModSide: CLIENT
+FMLCorePluginContainsFMLMod: true
+TweakClass: gg.essential.loader.stage0.EssentialSetupTweaker
+ForceLoadAsMod: true
+FMLCorePlugin: qolskyblockmod.pizzaclient.plugins.PizzaClientLoadingPl
+ ugin
+

@@ -1,0 +1,256 @@
+{
+  "mappings": {
+    "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiScreen": {
+      "sendChatMessage(Ljava/lang/String;Z)V": "Lnet/minecraft/client/gui/GuiScreen;func_175281_b(Ljava/lang/String;Z)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinLayerArmorRenderer": {
+      "doRenderLayer": "Lnet/minecraft/client/renderer/entity/layers/LayerArmorBase;func_177141_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/world/MixinCocoaBean": {
+      "setBlockBoundsBasedOnState": "Lnet/minecraft/block/BlockCocoa;func_180654_a(Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinContainerGui": {
+      "drawScreen": "Lnet/minecraft/client/gui/inventory/GuiContainer;func_73863_a(IIF)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiIngame": {
+      "renderScoreboard": "Lnet/minecraft/client/gui/GuiIngame;func_180475_a(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V",
+      "Lnet/minecraft/client/gui/FontRenderer;drawString(Ljava/lang/String;III)I": "Lnet/minecraft/client/gui/FontRenderer;func_78276_b(Ljava/lang/String;III)I"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/session/MixinSession": {
+      "getToken": "Lnet/minecraft/util/Session;func_148254_d()Ljava/lang/String;",
+      "getSessionID": "Lnet/minecraft/util/Session;func_111286_b()Ljava/lang/String;"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinCategoryEntry": {
+      "drawEntry": "Lnet/minecraft/client/gui/GuiKeyBindingList$CategoryEntry;func_180790_a(IIIIIIIZ)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/server/MixinReceivedPackets": {
+      "handleParticles": "Lnet/minecraft/client/network/NetHandlerPlayClient;func_147289_a(Lnet/minecraft/network/play/server/S2APacketParticles;)V",
+      "handlePlayerPosLook": "Lnet/minecraft/client/network/NetHandlerPlayClient;func_147258_a(Lnet/minecraft/network/play/server/S08PacketPlayerPosLook;)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/entity/MixinEntityPlayerSP": {
+      "onLivingUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70636_d()V",
+      "Lnet/minecraft/client/gui/GuiScreen;doesGuiPauseGame()Z": "Lnet/minecraft/client/gui/GuiScreen;func_73868_f()Z",
+      "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiOverlayDebug": {
+      "call": "Lnet/minecraft/client/gui/GuiOverlayDebug;call()Ljava/util/List;"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/world/MixinChunk": {
+      "setBlockState": "Lnet/minecraft/world/chunk/Chunk;func_177436_a(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/block/state/IBlockState;"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/accessor/AccessorFontRenderer": {
+      "getUnicodePageLocation": "func_111271_a(I)Lnet/minecraft/util/ResourceLocation;",
+      "renderString": "func_180455_b(Ljava/lang/String;FFIZ)I",
+      "resetStyles": "func_78265_b()V",
+      "colorCode": "field_78285_g:[I",
+      "glyphWidth": "field_78287_e:[B",
+      "locationFontTexture": "field_111273_g:Lnet/minecraft/util/ResourceLocation;"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/misc/MixinSoundManager": {
+      "playSound": "Lnet/minecraft/client/audio/SoundManager;func_148611_c(Lnet/minecraft/client/audio/ISound;)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinLayerCustomHead": {
+      "doRenderLayer": "Lnet/minecraft/client/renderer/entity/layers/LayerCustomHead;func_177141_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/MixinMinecraftt": {
+      "sendClickBlockToController": "Lnet/minecraft/client/Minecraft;func_147115_a(Z)V",
+      "Lnet/minecraft/client/Minecraft;currentScreen:Lnet/minecraft/client/gui/GuiScreen;": "Lnet/minecraft/client/Minecraft;field_71462_r:Lnet/minecraft/client/gui/GuiScreen;",
+      "startGame": "Lnet/minecraft/client/Minecraft;func_71384_a()V",
+      "runTick": "Lnet/minecraft/client/Minecraft;func_71407_l()V",
+      "clickMouse": "Lnet/minecraft/client/Minecraft;func_147116_af()V",
+      "Lnet/minecraft/client/shader/Framebuffer;setFramebufferColor(FFFF)V": "Lnet/minecraft/client/shader/Framebuffer;func_147604_a(FFFF)V",
+      "setIngameFocus": "Lnet/minecraft/client/Minecraft;func_71381_h()V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinFontRenderer": {
+      "drawString(Ljava/lang/String;FFIZ)I": "Lnet/minecraft/client/gui/FontRenderer;func_175065_a(Ljava/lang/String;FFIZ)I"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/server/MixinNetworkManager": {
+      "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/entity/MixinAbstractPlayerClient": {
+      "getLocationSkin()Lnet/minecraft/util/ResourceLocation;": "Lnet/minecraft/client/entity/AbstractClientPlayer;func_110306_p()Lnet/minecraft/util/ResourceLocation;"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinEntityRenderer": {
+      "renderHand": "Lnet/minecraft/client/renderer/EntityRenderer;func_78476_b(FI)V",
+      "setupCameraTransform": "Lnet/minecraft/client/renderer/EntityRenderer;func_78479_a(FI)V",
+      "orientCamera": "Lnet/minecraft/client/renderer/EntityRenderer;func_78467_g(F)V",
+      "getMouseOver": "Lnet/minecraft/client/renderer/EntityRenderer;func_78473_a(F)V",
+      "Lnet/minecraft/client/multiplayer/PlayerControllerMP;getBlockReachDistance()F": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78757_d()F",
+      "updateCameraAndRender": "Lnet/minecraft/client/renderer/EntityRenderer;func_181560_a(FJ)V"
+    },
+    "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinModelBiped": {
+      "Lnet/minecraft/util/MathHelper;cos(F)F": "Lnet/minecraft/util/MathHelper;func_76134_b(F)F",
+      "setRotationAngles": "Lnet/minecraft/client/model/ModelBiped;func_78087_a(FFFFFFLnet/minecraft/entity/Entity;)V"
+    }
+  },
+  "data": {
+    "notch": {
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiScreen": {
+        "sendChatMessage(Ljava/lang/String;Z)V": "Laxu;b(Ljava/lang/String;Z)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinLayerArmorRenderer": {
+        "doRenderLayer": "Lbkn;a(Lpr;FFFFFFF)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/world/MixinCocoaBean": {
+        "setBlockBoundsBasedOnState": "Lafu;a(Ladq;Lcj;)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinContainerGui": {
+        "drawScreen": "Layl;a(IIF)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiIngame": {
+        "renderScoreboard": "Lavo;a(Lauk;Lavr;)V",
+        "Lnet/minecraft/client/gui/FontRenderer;drawString(Ljava/lang/String;III)I": "Lavn;a(Ljava/lang/String;III)I"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/session/MixinSession": {
+        "getToken": "Lavm;d()Ljava/lang/String;",
+        "getSessionID": "Lavm;a()Ljava/lang/String;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinCategoryEntry": {
+        "drawEntry": "Layi$a;a(IIIIIIIZ)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/server/MixinReceivedPackets": {
+        "handleParticles": "Lbcy;a(Lgr;)V",
+        "handlePlayerPosLook": "Lbcy;a(Lfi;)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/entity/MixinEntityPlayerSP": {
+        "onLivingUpdate": "Lbew;m()V",
+        "Lnet/minecraft/client/gui/GuiScreen;doesGuiPauseGame()Z": "Laxu;d()Z",
+        "onUpdateWalkingPlayer": "Lbew;p()V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiOverlayDebug": {
+        "call": "Lavv;b()Ljava/util/List;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/world/MixinChunk": {
+        "setBlockState": "Lamy;a(Lcj;Lalz;)Lalz;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/accessor/AccessorFontRenderer": {
+        "getUnicodePageLocation": "a(I)Ljy;",
+        "renderString": "b(Ljava/lang/String;FFIZ)I",
+        "resetStyles": "e()V",
+        "colorCode": "f:[I",
+        "glyphWidth": "e:[B",
+        "locationFontTexture": "g:Ljy;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/misc/MixinSoundManager": {
+        "playSound": "Lbpx;c(Lbpj;)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinLayerCustomHead": {
+        "doRenderLayer": "Lbks;a(Lpr;FFFFFFF)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/MixinMinecraftt": {
+        "sendClickBlockToController": "Lave;b(Z)V",
+        "Lnet/minecraft/client/Minecraft;currentScreen:Lnet/minecraft/client/gui/GuiScreen;": "Lave;m:Laxu;",
+        "startGame": "Lave;am()V",
+        "runTick": "Lave;s()V",
+        "clickMouse": "Lave;aw()V",
+        "Lnet/minecraft/client/shader/Framebuffer;setFramebufferColor(FFFF)V": "Lbfw;a(FFFF)V",
+        "setIngameFocus": "Lave;n()V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinFontRenderer": {
+        "drawString(Ljava/lang/String;FFIZ)I": "Lavn;a(Ljava/lang/String;FFIZ)I"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/server/MixinNetworkManager": {
+        "sendPacket(Lnet/minecraft/network/Packet;)V": "Lek;a(Lff;)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/entity/MixinAbstractPlayerClient": {
+        "getLocationSkin()Lnet/minecraft/util/ResourceLocation;": "Lbet;i()Ljy;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinEntityRenderer": {
+        "renderHand": "Lbfk;b(FI)V",
+        "setupCameraTransform": "Lbfk;a(FI)V",
+        "orientCamera": "Lbfk;f(F)V",
+        "getMouseOver": "Lbfk;a(F)V",
+        "Lnet/minecraft/client/multiplayer/PlayerControllerMP;getBlockReachDistance()F": "Lbda;d()F",
+        "updateCameraAndRender": "Lbfk;a(FJ)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinModelBiped": {
+        "Lnet/minecraft/util/MathHelper;cos(F)F": "Lns;b(F)F",
+        "setRotationAngles": "Lbbj;a(FFFFFFLpk;)V"
+      }
+    },
+    "searge": {
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiScreen": {
+        "sendChatMessage(Ljava/lang/String;Z)V": "Lnet/minecraft/client/gui/GuiScreen;func_175281_b(Ljava/lang/String;Z)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinLayerArmorRenderer": {
+        "doRenderLayer": "Lnet/minecraft/client/renderer/entity/layers/LayerArmorBase;func_177141_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/world/MixinCocoaBean": {
+        "setBlockBoundsBasedOnState": "Lnet/minecraft/block/BlockCocoa;func_180654_a(Lnet/minecraft/world/IBlockAccess;Lnet/minecraft/util/BlockPos;)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinContainerGui": {
+        "drawScreen": "Lnet/minecraft/client/gui/inventory/GuiContainer;func_73863_a(IIF)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiIngame": {
+        "renderScoreboard": "Lnet/minecraft/client/gui/GuiIngame;func_180475_a(Lnet/minecraft/scoreboard/ScoreObjective;Lnet/minecraft/client/gui/ScaledResolution;)V",
+        "Lnet/minecraft/client/gui/FontRenderer;drawString(Ljava/lang/String;III)I": "Lnet/minecraft/client/gui/FontRenderer;func_78276_b(Ljava/lang/String;III)I"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/session/MixinSession": {
+        "getToken": "Lnet/minecraft/util/Session;func_148254_d()Ljava/lang/String;",
+        "getSessionID": "Lnet/minecraft/util/Session;func_111286_b()Ljava/lang/String;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinCategoryEntry": {
+        "drawEntry": "Lnet/minecraft/client/gui/GuiKeyBindingList$CategoryEntry;func_180790_a(IIIIIIIZ)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/server/MixinReceivedPackets": {
+        "handleParticles": "Lnet/minecraft/client/network/NetHandlerPlayClient;func_147289_a(Lnet/minecraft/network/play/server/S2APacketParticles;)V",
+        "handlePlayerPosLook": "Lnet/minecraft/client/network/NetHandlerPlayClient;func_147258_a(Lnet/minecraft/network/play/server/S08PacketPlayerPosLook;)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/entity/MixinEntityPlayerSP": {
+        "onLivingUpdate": "Lnet/minecraft/client/entity/EntityPlayerSP;func_70636_d()V",
+        "Lnet/minecraft/client/gui/GuiScreen;doesGuiPauseGame()Z": "Lnet/minecraft/client/gui/GuiScreen;func_73868_f()Z",
+        "onUpdateWalkingPlayer": "Lnet/minecraft/client/entity/EntityPlayerSP;func_175161_p()V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/gui/MixinGuiOverlayDebug": {
+        "call": "Lnet/minecraft/client/gui/GuiOverlayDebug;call()Ljava/util/List;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/world/MixinChunk": {
+        "setBlockState": "Lnet/minecraft/world/chunk/Chunk;func_177436_a(Lnet/minecraft/util/BlockPos;Lnet/minecraft/block/state/IBlockState;)Lnet/minecraft/block/state/IBlockState;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/accessor/AccessorFontRenderer": {
+        "getUnicodePageLocation": "func_111271_a(I)Lnet/minecraft/util/ResourceLocation;",
+        "renderString": "func_180455_b(Ljava/lang/String;FFIZ)I",
+        "resetStyles": "func_78265_b()V",
+        "colorCode": "field_78285_g:[I",
+        "glyphWidth": "field_78287_e:[B",
+        "locationFontTexture": "field_111273_g:Lnet/minecraft/util/ResourceLocation;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/misc/MixinSoundManager": {
+        "playSound": "Lnet/minecraft/client/audio/SoundManager;func_148611_c(Lnet/minecraft/client/audio/ISound;)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinLayerCustomHead": {
+        "doRenderLayer": "Lnet/minecraft/client/renderer/entity/layers/LayerCustomHead;func_177141_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/MixinMinecraftt": {
+        "sendClickBlockToController": "Lnet/minecraft/client/Minecraft;func_147115_a(Z)V",
+        "Lnet/minecraft/client/Minecraft;currentScreen:Lnet/minecraft/client/gui/GuiScreen;": "Lnet/minecraft/client/Minecraft;field_71462_r:Lnet/minecraft/client/gui/GuiScreen;",
+        "startGame": "Lnet/minecraft/client/Minecraft;func_71384_a()V",
+        "runTick": "Lnet/minecraft/client/Minecraft;func_71407_l()V",
+        "clickMouse": "Lnet/minecraft/client/Minecraft;func_147116_af()V",
+        "Lnet/minecraft/client/shader/Framebuffer;setFramebufferColor(FFFF)V": "Lnet/minecraft/client/shader/Framebuffer;func_147604_a(FFFF)V",
+        "setIngameFocus": "Lnet/minecraft/client/Minecraft;func_71381_h()V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinFontRenderer": {
+        "drawString(Ljava/lang/String;FFIZ)I": "Lnet/minecraft/client/gui/FontRenderer;func_175065_a(Ljava/lang/String;FFIZ)I"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/server/MixinNetworkManager": {
+        "sendPacket(Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/network/NetworkManager;func_179290_a(Lnet/minecraft/network/Packet;)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/entity/MixinAbstractPlayerClient": {
+        "getLocationSkin()Lnet/minecraft/util/ResourceLocation;": "Lnet/minecraft/client/entity/AbstractClientPlayer;func_110306_p()Lnet/minecraft/util/ResourceLocation;"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinEntityRenderer": {
+        "renderHand": "Lnet/minecraft/client/renderer/EntityRenderer;func_78476_b(FI)V",
+        "setupCameraTransform": "Lnet/minecraft/client/renderer/EntityRenderer;func_78479_a(FI)V",
+        "orientCamera": "Lnet/minecraft/client/renderer/EntityRenderer;func_78467_g(F)V",
+        "getMouseOver": "Lnet/minecraft/client/renderer/EntityRenderer;func_78473_a(F)V",
+        "Lnet/minecraft/client/multiplayer/PlayerControllerMP;getBlockReachDistance()F": "Lnet/minecraft/client/multiplayer/PlayerControllerMP;func_78757_d()F",
+        "updateCameraAndRender": "Lnet/minecraft/client/renderer/EntityRenderer;func_181560_a(FJ)V"
+      },
+      "qolskyblockmod/pizzaclient/mixins/mixin/renderer/MixinModelBiped": {
+        "Lnet/minecraft/util/MathHelper;cos(F)F": "Lnet/minecraft/util/MathHelper;func_76134_b(F)F",
+        "setRotationAngles": "Lnet/minecraft/client/model/ModelBiped;func_78087_a(FFFFFFLnet/minecraft/entity/Entity;)V"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+[
+{
+  "modid": "pizzaclient",
+  "name": "PizzaClient",
+  "description": "This is not a mod for hacking this is all qol features i swear",
+  "version": "1.1.2-pre1",
+  "mcversion": "1.8.9",
+  "authorList": ["Pizza"],
+  "credits": "Jesus"
+}
+]

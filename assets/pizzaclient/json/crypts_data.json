@@ -1,0 +1,12 @@
+{
+  "small": {
+    "stairs": 6,
+    "slabs": 6,
+    "bricks": 0
+  },
+  "normal": {
+    "stairs": 12,
+    "slabs": 15,
+    "bricks": 3
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.6",
+  "plugin": "qolskyblockmod.pizzaclient.plugins.PizzaClientMixinPlugin",
+  "package": "qolskyblockmod.pizzaclient.mixins",
+  "refmap": "mixins.pizzaclient.refmap.json",
+  "mixins": [
+    "mixin.MixinMinecraftt",
+    "mixin.entity.MixinAbstractPlayerClient",
+    "mixin.entity.MixinEntityPlayerSP",
+    "mixin.gui.MixinContainerGui",
+    "mixin.gui.MixinGuiScreen",
+    "mixin.misc.MixinSoundManager",
+    "mixin.misc.MixinSplashProgress",
+    "mixin.renderer.MixinEntityRenderer",
+    "mixin.renderer.MixinLayerArmorRenderer",
+    "mixin.renderer.MixinLayerCustomHead",
+    "mixin.renderer.MixinModelBiped",
+    "mixin.server.MixinModList",
+    "mixin.server.MixinNetworkManager",
+    "mixin.server.MixinReceivedPackets",
+    "mixin.session.MixinSession",
+    "mixin.session.MixinYggdrasil",
+    "mixin.world.MixinChunk",
+    "mixin.world.MixinCocoaBean",
+    "mixin.world.MixinWorld"
+  ],
+  "verbose": true,
+  "client": [
+    "mixin.accessor.AccessorFontRenderer",
+    "mixin.gui.MixinCategoryEntry",
+    "mixin.gui.MixinGuiIngame",
+    "mixin.gui.MixinGuiOverlayDebug",
+    "mixin.renderer.MixinFontRenderer"
+  ]
+}
